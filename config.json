@@ -1,0 +1,13 @@
+{
+    "name": "backup",
+    "inDirs": [
+        "/home/adam/repos/backup"
+    ],
+    "outDir": "/home/adam/repos",
+    "excludedExts": [
+        "avi", "bak", "bmp", "cab", "cda", "chm", "css", "dll", "exe", "gif",
+        "iso", "jpeg", "jpg", "m4a", "m4p", "m4v", "mp3", "mp4", "mpeg", "mpg",
+        "msi", "wav", "wma", "wmv"
+    ],
+    "hashExcludedFilesMaxSize": 100000000
+}
