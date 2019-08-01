@@ -1,7 +1,8 @@
 {
     "name": "backup",
     "inDirs": [
-        "/home/adam/repos/backup"
+        "/home/adam/repos/backup",
+        "/home/adam/repos/wav2bmp"
     ],
     "outDir": "/home/adam/repos",
     "excludedExts": [
