@@ -88,6 +88,7 @@ sqlite3_create_tables = """
     CREATE INDEX `ind_file_hash` ON `file` (
         `hash` ASC
     );
+    PRAGMA synchronous = OFF;
 """
 
 sqlite3_insert_in_dir = """
@@ -141,13 +142,13 @@ error_codes = {
 
 
 def hash_file(file_path):
-   h = hashlib.sha256()
+    h = hashlib.sha256()
 
-   f = open(file_path, "rb")
-   h.update(f.read())
-   f.close()
+    f = open(file_path, "rb")
+    h.update(f.read())
+    f.close()
 
-   return h.hexdigest()
+    return h.hexdigest()
 
 
 def datetime_to_unix(dt):
